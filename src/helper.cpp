@@ -190,7 +190,7 @@ void shifting_lane(int goal_lane,double curr_d, double curr_s,double &end_s ,dou
   //function to complete a lane_shift that has already begun
   double goal_d = goal_lane*4 -2;
   double remaining_d = abs(goal_d-curr_d);
-  double d_vel = 4./2.5; // calculate velocity in d direction for the lane shift: 4m/2.5s
+  double d_vel = 4./2.5; // calculate velocity in d direction for the lane shift: 4m/2.5s; 2.5s being the target time to complete it
   double remaining_time = remaining_d/d_vel; //calculate the time to complete lane shift
   double remaining_way = remaining_time * curr_velo;// way to complete
   end_s = curr_s+remaining_way; //upadate global variable containing the s-value at the end of the lane shift
