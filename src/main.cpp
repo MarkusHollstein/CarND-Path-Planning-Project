@@ -132,7 +132,7 @@ int main() {
               	double  old_dist;
           		//calculate speed at the end of the previous path by calculating the distance between the last two points and dividing by 0.02
           		old_dist = distance(previous_path_x[previous_path_x.size()-1],previous_path_y[previous_path_y.size()-1],previous_path_x[previous_path_x.size()-2],previous_path_y[previous_path_y.size()-2]);
-          		curr_speed = old_dist/0.02;
+          		curr_speed = old_dist/0.02;//0.02 is the time it shall take to move from one waypoint to the next
             }
           	if(lane_shift) // check wheter lane shift is going on
             {
